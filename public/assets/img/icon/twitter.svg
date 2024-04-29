@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.465" height="21.465" viewBox="0 0 21.465 21.465">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="21.465" height="21.465" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="_002-twitter" data-name="002-twitter" clip-path="url(#clip-path)">
+    <ellipse id="Ellipse_124" data-name="Ellipse 124" cx="10.733" cy="10.733" rx="10.733" ry="10.733" fill="#55acee"/>
+    <g id="Group_688" data-name="Group 688" transform="translate(4.802 6.51)">
+      <path id="Path_43114" data-name="Path 43114" d="M37.607,35.231a5.118,5.118,0,0,1-1.474.4,2.572,2.572,0,0,0,1.128-1.419,5.136,5.136,0,0,1-1.629.622,2.568,2.568,0,0,0-4.372,2.34A7.282,7.282,0,0,1,25.973,34.5a2.568,2.568,0,0,0,.794,3.425,2.547,2.547,0,0,1-1.162-.321c0,.011,0,.022,0,.033a2.567,2.567,0,0,0,2.058,2.515,2.575,2.575,0,0,1-1.158.044,2.568,2.568,0,0,0,2.4,1.782,5.179,5.179,0,0,1-3.8,1.062,7.3,7.3,0,0,0,11.231-6.147c0-.111,0-.222-.007-.332a5.2,5.2,0,0,0,1.28-1.328Z" transform="translate(-25.103 -34.028)" fill="#f1f2f2"/>
+    </g>
+  </g>
+</svg>

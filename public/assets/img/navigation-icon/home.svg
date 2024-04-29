@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.574" height="21.333" viewBox="0 0 21.574 21.333">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="21.574" height="21.333" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2228" data-name="Group 2228" transform="translate(-136 -296)">
+    <g id="_001-facebook" data-name="001-facebook" transform="translate(136 296)" clip-path="url(#clip-path)">
+      <ellipse id="Ellipse_123" data-name="Ellipse 123" cx="10.787" cy="10.666" rx="10.787" ry="10.666" fill="#0675c1"/>
+    </g>
+    <g id="house-black-silhouette-without-door" transform="translate(142 301.879)">
+      <path id="Path_42996" data-name="Path 42996" d="M9.767,9.562a.472.472,0,0,0-.039-.675L5.308,5.019a.551.551,0,0,0-.719.008L.154,9.094a.469.469,0,0,0-.021.674l.111.116a.485.485,0,0,0,.666.051l.332-.3v4.346a.482.482,0,0,0,.483.483H3.452a.482.482,0,0,0,.483-.483V10.943H6.14v3.041a.456.456,0,0,0,.453.482H8.426a.482.482,0,0,0,.483-.483V9.7l.2.18c.113.1.35.02.529-.178Z" transform="translate(0 -4.89)" fill="#e9e9f0"/>
+    </g>
+  </g>
+</svg>

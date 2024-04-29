@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.574" height="21.574" viewBox="0 0 21.574 21.574">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="21.574" height="21.574" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d4a1f2"/>
+      <stop offset="1" stop-color="#e2b0ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2706" data-name="Group 2706" transform="translate(-43 -114)">
+    <g id="Group_2705" data-name="Group 2705" transform="translate(0 -12)">
+      <g id="Group_2691" data-name="Group 2691" transform="translate(-245 -195)">
+        <g id="_001-facebook" data-name="001-facebook" transform="translate(288 321)" clip-path="url(#clip-path)">
+          <ellipse id="Ellipse_123" data-name="Ellipse 123" cx="10.787" cy="10.787" rx="10.787" ry="10.787" fill="#f2f5fc"/>
+        </g>
+      </g>
+      <path id="user_1_" data-name="user (1)" d="M15.38,8.763l-1.952-.976a.537.537,0,0,1-.3-.483V6.613c.047-.057.1-.122.147-.194a4.676,4.676,0,0,0,.6-1.185.811.811,0,0,0,.475-.739V3.678a.815.815,0,0,0-.2-.536V2.055A1.832,1.832,0,0,0,13.723.721,2.572,2.572,0,0,0,11.7,0,2.572,2.572,0,0,0,9.675.721a1.832,1.832,0,0,0-.427,1.333V3.141a.815.815,0,0,0-.2.536v.817a.812.812,0,0,0,.306.635,4.288,4.288,0,0,0,.716,1.479v.676a.54.54,0,0,1-.281.474l-1.823.994A1.842,1.842,0,0,0,7,10.371v.662c0,.97,3.074,1.226,4.7,1.226s4.7-.256,4.7-1.226v-.622A1.833,1.833,0,0,0,15.38,8.763Z" transform="translate(42.301 131)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

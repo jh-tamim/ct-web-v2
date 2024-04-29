@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5067ed"/>
+      <stop offset="1" stop-color="#415dff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2502" data-name="Group 2502" transform="translate(-44 -615)">
+    <g id="Group_2192" data-name="Group 2192" transform="translate(-31 120)">
+      <circle id="Ellipse_173" data-name="Ellipse 173" cx="13" cy="13" r="13" transform="translate(75 495)" fill="url(#linear-gradient)"/>
+      <g id="icon" transform="translate(79.641 502)">
+        <g id="c181_note" transform="translate(4.359 0)">
+          <path id="Path_43235" data-name="Path 43235" d="M11.819,1.9H9.977v.746h1.492a.372.372,0,0,1,.373.372v8.6a.372.372,0,0,1-.373.373H5.477a.372.372,0,0,1-.372-.373v-8.6a.372.372,0,0,1,.372-.372H6.992V1.9H5.105a.746.746,0,0,0-.746.746V12a.745.745,0,0,0,.746.746h6.713A.766.766,0,0,0,12.59,12V2.651A.767.767,0,0,0,11.819,1.9Z" transform="translate(-4.359 -1.175)" fill="#fff"/>
+          <path id="Path_43236" data-name="Path 43236" d="M10.082,1.9c-.159,0-.288.089-.288.2v.4h4.064V2.1c0-.109-.131-.2-.289-.2H12.7V.284A1.555,1.555,0,0,0,10.946.273l0,1.629Z" transform="translate(-7.711 0)" fill="#fff"/>
+          <rect id="Rectangle_1939" data-name="Rectangle 1939" width="4.893" height="0.941" transform="translate(1.669 4.296)" fill="#fff"/>
+          <rect id="Rectangle_1940" data-name="Rectangle 1940" width="4.893" height="0.94" transform="translate(1.669 6.442)" fill="#fff"/>
+          <rect id="Rectangle_1941" data-name="Rectangle 1941" width="4.893" height="0.941" transform="translate(1.669 8.675)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

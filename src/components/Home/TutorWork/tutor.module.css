@@ -1,0 +1,21 @@
+.tutorWorkItemActive {
+  box-shadow: 0px 3px 11px 0px #0675c159;
+  border: 1px solid #0675c159;
+  transition: 0.2s ease-in-out;
+}
+.tutorItem {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.svg1 {
+  position: absolute;
+  height: 160px;
+  top: 50%;
+  left: 100%;
+}
+.svg2 {
+  position: absolute;
+  height: 150px;
+  top: 54%;
+  right: 100%;
+}

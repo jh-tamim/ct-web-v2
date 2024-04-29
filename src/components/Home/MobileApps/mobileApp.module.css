@@ -1,0 +1,58 @@
+.mobileAppsSection {
+  background-image: url(/assets/img/landing_page/app-branding_background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.masWrapper {
+  position: relative;
+  padding: 30px 0;
+}
+.mas-wrapper h2 {
+  font-size: 29px;
+  line-height: 35px;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: #fff;
+}
+.qrCodeArea {
+}
+.qrCodeArea::after {
+  content: "Scan to Download";
+  position: absolute;
+  bottom: -1.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 0.2rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.8rem;
+  background-color: #fb7b49;
+}
+.latterONe {
+  font-size: 70px;
+  color: #fb7b49;
+}
+.qrCodeArea .qrCode {
+  width: 100%;
+  height: auto;
+}
+
+.mas-wrapper p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 18px;
+  width: 292px;
+}
+
+.mas-wrapper img {
+  width: 146px;
+  height: 40px;
+}

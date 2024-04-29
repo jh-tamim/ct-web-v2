@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.465" height="21.465" viewBox="0 0 21.465 21.465">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="21.465" height="21.465" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2472" data-name="Group 2472" transform="translate(-136 -824)">
+    <g id="Group_2242" data-name="Group 2242" transform="translate(-5 353)">
+      <g id="_001-facebook" data-name="001-facebook" transform="translate(141 471)" clip-path="url(#clip-path)">
+        <ellipse id="Ellipse_125" data-name="Ellipse 125" cx="10.733" cy="10.733" rx="10.733" ry="10.733" fill="#db2f2f"/>
+      </g>
+    </g>
+    <g id="logout" transform="translate(142 829.996)">
+      <path id="Path_43318" data-name="Path 43318" d="M6.058,5.193a.4.4,0,0,0-.4.4v1.6a.4.4,0,0,1-.4.4H4.038V1.6a.805.805,0,0,0-.55-.759L3.369.8H5.25a.4.4,0,0,1,.4.4V2.4a.4.4,0,0,0,.808,0V1.2A1.206,1.206,0,0,0,5.25,0H.909A.32.32,0,0,0,.865.013C.846.011.827,0,.808,0A.8.8,0,0,0,0,.8V7.987a.805.805,0,0,0,.55.759l2.43.8a.845.845,0,0,0,.25.037.8.8,0,0,0,.808-.8v-.4H5.25a1.206,1.206,0,0,0,1.212-1.2v-1.6a.4.4,0,0,0-.4-.4Zm0,0" fill="#e9e9f0"/>
+      <path id="Path_43319" data-name="Path 43319" d="M281.656,108.4l-1.615-1.615a.4.4,0,0,0-.689.285v1.212h-1.615a.4.4,0,1,0,0,.808h1.615V110.3a.4.4,0,0,0,.689.286l1.615-1.615A.4.4,0,0,0,281.656,108.4Zm0,0" transform="translate(-272.194 -104.683)" fill="#e9e9f0"/>
+    </g>
+  </g>
+</svg>
