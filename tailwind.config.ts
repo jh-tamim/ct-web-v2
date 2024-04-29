@@ -38,7 +38,7 @@ const config: Config = {
       container: {
         screens: {
           sm: "600px",
-          md: "1480px",
+          md: "1100px",
         },
       },
 

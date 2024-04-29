@@ -19,7 +19,7 @@ const MobileApps = () => {
               text={" 1 Platform for All Tutors"}
             ></TextDecoration>
             <Card
-              className={`md:w-[18%] w-[40%] flex justify-center items-center p-6`}
+              className={`md:w-[25%] w-[40%] flex justify-center items-center p-6`}
             >
               <div
                 className={`relative md:w-52 md:h-52 md:pt-0 w-20 h-20 mx-auto`}

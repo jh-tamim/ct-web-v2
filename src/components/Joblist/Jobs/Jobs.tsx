@@ -141,7 +141,7 @@ const Jobs = (props: jobTypes) => {
               text={`Subjects :`}
               extraClass="text-grayCot"
             ></TextDecoration>
-            {/* <Flex gap="4px 0" wrap="wrap">
+            <Flex gap="4px 0" wrap="wrap">
               {props.items.subjects?.split(",")?.map((eText, index) => {
                 return (
                   <Tag key={index} color="blue">
@@ -153,20 +153,7 @@ const Jobs = (props: jobTypes) => {
                   </Tag>
                 );
               })}
-            </Flex> */}
-
-            <div className="flex gap-2 flex-wrap">
-              {/* {props.items.subjects?.split(",")?.map((eText, index) => {
-                return (
-                  <Badge
-                    content={eText}
-                    shape="circle"
-                    color="primary"
-                    key={index}
-                  ></Badge>
-                );
-              })} */}
-            </div>
+            </Flex>
           </div>
 
           <Button1>Details</Button1>

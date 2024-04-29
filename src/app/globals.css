@@ -18,6 +18,8 @@ p {
   @apply font-sans text-base font-normal tracking-normal leading-7 m-0;
 }
 
+/* container */
+
 /* sign in */
 
 @layer components {
@@ -82,4 +84,24 @@ p {
 .embla__slide {
   flex: 0 0 100%;
   max-width: 100%;
+}
+
+/* swipper */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Background color */
+  border-radius: 50%; /* Make it circular */
+  color: white; /* Icon color */
+  font-size: 24px; /* Icon size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Hover background color */
 }

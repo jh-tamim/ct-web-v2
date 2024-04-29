@@ -57,17 +57,17 @@ const Hero = () => {
                     height={120}
                   />
                   <Image
-                    className="rounded-lg floating w-[120px]"
+                    className="rounded-lg floating w-[130px]"
                     src="/assets/img/banners/02.png"
                     alt="imag"
-                    width={110}
-                    height={60}
+                    width={150}
+                    height={200}
                   />
                 </div>
                 <div className="flex justify-center items-start gap-1 md:gap-3">
                   {" "}
                   <Image
-                    className="rounded-lg floating w-[120px]"
+                    className="rounded-lg floating w-[130px]"
                     src="/assets/img/banners/04.png"
                     alt="imag"
                     width={110}

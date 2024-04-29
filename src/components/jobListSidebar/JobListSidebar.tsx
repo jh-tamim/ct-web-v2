@@ -40,7 +40,7 @@ const JobListSidebar = () => {
 
           <TextDecoration
             type={"paragraph"}
-            extraClass="text-white mt-5 text-start flex flex-wrap leading-[25px]"
+            extraClass="text-white mt-5 flex flex-wrap text-justify"
             text={`Caretutors was founded in 2012. It is Bangladesh's first, most trusted and leading online platform for guardians, students, and tutors to hire verified tutors or find tuition jobs in 13 different categories from anywhere in the country.`}
           ></TextDecoration>
         </div>
@@ -54,7 +54,7 @@ const JobListSidebar = () => {
 
           <TextDecoration
             type={"paragraph"}
-            extraClass="text-white mt-5"
+            extraClass="text-white mt-5 text-justify"
             text={` With Caretutors official app, Make your profile in minutes. Apply
               to your preferred tutoring jobs that match your skills.`}
           ></TextDecoration>

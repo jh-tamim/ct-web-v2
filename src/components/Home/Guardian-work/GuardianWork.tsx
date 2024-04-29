@@ -8,14 +8,33 @@ import SectionWrapper from "@/components/UI/SectionWrapper/SectionWrapper";
 
 const GuardianWork = () => {
   const [onePath, setOnePath] = useState(0);
-  const [twoPath, setPathTwo] = useState(0);
-
-  const [activeGuardianOne, setActiveGuardianOne] = useState(false);
-  const [activeGuardianTwo, setActiveGuardianTwo] = useState(false);
-  const [activeGuardianThree, setActiveGuardianThree] = useState(false);
 
   // Define the type of howItsWork
-  const howItsWork = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const deltaY = scrollY - lastScrollY;
+      lastScrollY = scrollY;
+
+      const windowHeight = window.innerHeight;
+      let newValue = onePath;
+
+      if (deltaY > 0) {
+        newValue += 0.1;
+      } else {
+        newValue -= 0.1;
+      }
+      const clampedValue = Math.min(Math.max(newValue, 0.0), 1);
+      setOnePath(clampedValue);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [onePath]);
 
   return (
     <SectionWrapper>
@@ -29,117 +48,154 @@ const GuardianWork = () => {
         ></TextDecoration>
       </div>
 
-      <div className="flex flex-col gap-8">
-        <div
-          className={`md:w-[60%] w-[70%] flex flex-row gap-4 p-4 border rounded-md ${style.guardianWorkItemActive} shadow shadow-blue-400`}
-        >
-          <div className="relative md:w-[180px] md:h-[190px]  md:pt-0 rounded-md w-[60px] h-[40px]">
-            <Image
-              src="/assets/img/illustration/forGuardian/guardianSep1.png"
-              alt=""
-              fill
-              className=" w-full h-full absolute top-0 left-0 bottom-0 right-0"
-            ></Image>
-          </div>
+      <div className="space-y-6">
+        <div className="relative">
+          <section className=" body-font relative">
+            <div className="p-2 lg:w-[60%] md:w-full">
+              <div
+                className="flex border-2 rounded-xl   border-opacity-50 p-4 sm:flex-row items-center gap-2 "
+                style={{
+                  boxShadow: "0px 3px 11px 0px #0675c159",
+                  border: "1px solid #0675c159",
+                  transition: "0.2s ease-in-out",
+                }}
+              >
+                <Image
+                  className="w-[100px] h-[100px] md:w-[200px] md:h-[200px]"
+                  src={`/assets/img/illustration/forGuardian/guardianSep1.png`}
+                  alt="guarding image"
+                  width={200}
+                  height={200}
+                />
+                <div>
+                  <h2 className="text-xl title-font  mb-3 font-bold text-primary">
+                    Submit Your Tutor Request
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Fill out all the required fields and submit your request.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-          <div
-            className={`flex flex-col justify-center items-start `}
-            style={{ color: ` ${activeGuardianOne ? "#0675c1" : ""} ` }}
+          <svg
+            className="svg1 w-[250px] absolute top-24 left-[59%] hidden lg:block"
+            viewBox="0 0 229 173"
+            fill="none"
           >
-            <TextDecoration
-              type={"subheading"}
-              text={"Submit Your Tutor Request"}
-              extraClass="text-primary"
-              mode="bold"
-            ></TextDecoration>
-            <TextDecoration
-              type={"paragraph"}
-              text={"Fill out all the required fields and submit your request."}
-            ></TextDecoration>
-          </div>
-
-          {/*  */}
-
-          {/* <svg className={`${style.svg1}`} viewBox="0 0 229 173" fill="none">
-            <motion.path
-              initial={{ pathLength: 0, strokeWidth: 4 }}
-              animate={{ pathLength: onePath }}
-              transition={{ duration: 0.4 }}
-              d="M0 3H152C192.869 3 226 36.1309 226 77V173"
-              stroke="#0675C1"
-              strokeOpacity="0.95"
-              strokeWidth="6"
-            />
-          </svg>
-          <svg className={`${style.svg1}`} viewBox="0 0 229 173" fill="none">
             <path
               d="M0 3H152C192.869 3 226 36.1309 226 77V173"
               stroke="#0675C1"
               strokeOpacity="0.05"
               strokeWidth="6"
             />
-          </svg> */}
+          </svg>
+          <svg
+            className="svg1 w-[250px] absolute top-24 left-[59%] hidden lg:block"
+            viewBox="0 0 229 173"
+            fill="none"
+          >
+            <motion.path
+              transition={{ duration: 0.4 }}
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: onePath }}
+              d="M0 3H152C192.869 3 226 36.1309 226 77V173"
+              stroke="#0675C1"
+              strokeOpacity="1"
+              strokeWidth="4"
+            />
+          </svg>
         </div>
 
-        <div className="flex justify-end">
-          <div
-            className={`md:w-[60%] w-[70%] flex flex-row gap-4 p-4 border rounded-md guardianItem shadow shadow-blue-400 ${style.guardianWorkItemActive}`}
+        <div className="relative">
+          {" "}
+          <section className="body-font md:flex justify-end">
+            <div className="p-2 lg:w-[60%] md:w-full">
+              <div
+                className="flex border-2 rounded-xl   border-opacity-50 p-4 sm:flex-row items-center gap-2 "
+                style={{
+                  boxShadow: "0px 3px 11px 0px #0675c159",
+                  border: "1px solid #0675c159",
+                  transition: "0.2s ease-in-out",
+                }}
+              >
+                <Image
+                  className="w-[100px] h-[100px] md:w-[200px] md:h-[200px]"
+                  src={`/assets/img/illustration/forGuardian/guardianSep2.png`}
+                  alt="guarding image"
+                  width={200}
+                  height={200}
+                />
+                <div>
+                  <h2 className="text-xl title-font  mb-3 font-bold text-primary">
+                    Get the Maximum 5 Best Tutor CVs
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Within 48 hours, you will get up to 5 CVs of the best tutors
+                    who applied to your posted job.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <svg
+            className="svg2 w-[250px] absolute top-24 right-[59%] hidden lg:block"
+            viewBox="0 0 229 173"
+            fill="none"
           >
-            <div className="relative md:w-[200px] md:h-[190px]  md:pt-0 rounded-md w-[70px] h-[40px]">
+            <path
+              d="M229 3H77C36.1309 3 3.00001 36.1309 3.00001 77V173"
+              stroke="#0675C1"
+              strokeOpacity="0.05"
+              strokeWidth="6"
+            />
+          </svg>
+          <svg
+            className="svg2 w-[250px] absolute top-24 right-[59%] hidden lg:block"
+            viewBox="0 0 229 173"
+            fill="none"
+          >
+            <motion.path
+              transition={{ duration: 0.4 }}
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: onePath }}
+              d="M229 3H77C36.1309 3 3.00001 36.1309 3.00001 77V173"
+              stroke="#0675C1"
+              strokeOpacity="1"
+              strokeWidth="4"
+            />
+          </svg>
+        </div>
+        <section className=" body-font">
+          <div className="p-2 lg:w-[60%] md:w-full">
+            <div
+              className="flex border-2 rounded-xl   border-opacity-50 p-4 sm:flex-row items-center gap-2 "
+              style={{
+                boxShadow: "0px 3px 11px 0px #0675c159",
+                border: "1px solid #0675c159",
+                transition: "0.2s ease-in-out",
+              }}
+            >
               <Image
-                src="/assets/img/illustration/forGuardian/guardianSep2.png"
-                alt=""
-                fill
-                className=" w-full h-full absolute top-0 left-0 bottom-0 right-0"
-              ></Image>
-            </div>
-
-            <div className="flex flex-col justify-center items-start ">
-              <TextDecoration
-                type={"subheading"}
-                text={"Get the Maximum 5 Best Tutor CVs"}
-                extraClass="text-primary"
-                mode="bold"
-              ></TextDecoration>
-              <TextDecoration
-                type={"paragraph"}
-                text={
-                  "Within 48 hours, you'll get up to 5 CVs of the best tutors who applied to your posted job."
-                }
-              ></TextDecoration>
+                className="w-[100px] h-[100px] md:w-[200px] md:h-[200px]"
+                src={`/assets/img/illustration/forGuardian/guardianSep3.png`}
+                alt="guarding image"
+                width={200}
+                height={200}
+              />
+              <div>
+                <h2 className="text-xl title-font  mb-3 font-bold text-primary">
+                  Select the Best One & Start Learning
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Select a tutor from the shortlist and take trial classes to
+                  confirm your tutor.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div
-          className={`${style.guardianWorkItemActive} md:w-[60%] w-[70%] flex flex-row gap-4 p-4 border rounded-md guardianItem shadow shadow-blue-400 `}
-        >
-          <div
-            className={`relative md:w-[200px] md:h-[190px]  md:pt-0 rounded-md w-[70px] h-[40px] `}
-          >
-            <Image
-              src="/assets/img/illustration/forGuardian/guardianSep3.png"
-              alt=""
-              fill
-              className=" w-full h-full absolute top-0 left-0 bottom-0 right-0"
-            ></Image>
-          </div>
-
-          <div className="flex flex-col justify-center items-start ">
-            <TextDecoration
-              type={"subheading"}
-              text={"Select the Best One & Start Learning"}
-              extraClass="text-primary"
-              mode="bold"
-            ></TextDecoration>
-            <TextDecoration
-              type={"paragraph"}
-              text={
-                "Select a tutor from the shortlist and take trial classes to confirm your tutor."
-              }
-            ></TextDecoration>
-          </div>
-        </div>
+        </section>
       </div>
     </SectionWrapper>
   );

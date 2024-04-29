@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { FaInstagram, FaYoutube, FaFacebookSquare } from "react-icons/fa";
+import TextDecoration from "../TextDecoration/TextDecoration";
 
 const Footer = () => {
   return (
@@ -16,12 +17,14 @@ const Footer = () => {
             height={100}
           />
 
-          <p className="text-white">
-            Caretutors was founded in 2012. It is Bangladesh&apos;s first, most
+          <TextDecoration
+            type={"paragraph"}
+            text={`Caretutors was founded in 2012. It is Bangladesh&apos;s first, most
             trusted and leading online platform for guardians, students, and
             tutors to hire verified tutors or find tuition jobs in 13 different
-            categories from anywhere in the country.
-          </p>
+            categories from anywhere in the country.`}
+            extraClass="text-justify text-white"
+          ></TextDecoration>
         </div>
 
         {/* 2nd Part */}
@@ -113,7 +116,7 @@ const Footer = () => {
 
           <div className="flex flex-row gap-1">
             <Link
-              href="https://www.instagram.com/caretutors_insta/"
+              href="https://www.facebook.com/groups/133104194784618"
               passHref={true}
               target="_blank"
               className="cursor-pointer"
@@ -126,7 +129,7 @@ const Footer = () => {
               ></Image>
             </Link>
             <Link
-              href="https://www.instagram.com/caretutors_insta/"
+              href="https://www.facebook.com/groups/caretutors.tuition"
               passHref={true}
               target="_blank"
               className="cursor-pointer"
@@ -144,10 +147,13 @@ const Footer = () => {
         {/* 4th  */}
         <div className="flex flex-col items-start">
           <h2 className="text-white font-bold mb-[2rem]">Office Address</h2>
-          <p className="mt-2 text-white">
-            Level: 2, Rangs Naharz, House: 14, Road: Shahjalal Avenue, Sector 4,
-            Uttara, Dhaka 1230, Bangladesh
-          </p>
+
+          <TextDecoration
+            type={"paragraph"}
+            text={`Level: 2, Rangs Naharz, House: 14, Road: Shahjalal Avenue, Sector 4,
+            Uttara, Dhaka 1230, Bangladesh `}
+            extraClass="text-justify text-white mt-2 mb-2"
+          ></TextDecoration>
 
           <h2 className="mt-2 text-white font-bold">Download Our App</h2>
           <div className="flex flex-row gap-1 mt-[2.9rem]">
@@ -183,24 +189,31 @@ const Footer = () => {
         {/*  */}
       </div>
 
-      <div className="md:max-w-[1480px] max-w-[600px] m-auto w-full h-full flex flex-col justify-center items-center md:px-0 px-4 mt-[3rem]">
-        <p className="text-white text-lg font-bold">
-          Copyright © 2012-2024 Caretutors Technologies Ltd. All Rights
-          Reserved.
-        </p>
-        <p className="text-white md:text-lg font-bold    ">
-          Web App Version : 5.15.20
-        </p>
+      <div className="md:max-w-[1480px] max-w-[600px] m-auto w-full h-full flex flex-col justify-center items-center  md:px-0 px-4 mt-[3rem]">
+        <TextDecoration
+          type={"paragraph"}
+          text={` Copyright © 2012-2024 Caretutors Technologies Ltd. All Rights
+          Reserved.`}
+          mode="bold"
+          extraClass="text-white text-center "
+        ></TextDecoration>
+        <TextDecoration
+          type={"paragraph"}
+          text={`Web App Version : 5.15.20`}
+          mode="bold"
+          extraClass="text-white"
+        ></TextDecoration>
 
         <hr></hr>
-        <p className="text-white text-sm flex flex-wrap">
-          <strong>Disclaimer: </strong>
-          Caretutors is an online platform that connects learners with tutors.
-          Caretutors do not supply tuition to those seeking tuition, nor do
-          Caretutors provide or propose specific tutors to those seeking tutors.
-          By considering security issues and using technology, Caretutors try to
-          match tutors with learners without directly providing the tutoring
-          service.
+        {/*  */}
+
+        <p className="text-sm text-white py-3 overflow-hidden text-center ">
+          <b>Disclaimer: </b>Caretutors is an online platform that connects
+          learners with tutors. Caretutors do not supply tuition to those
+          seeking tuition, nor do Caretutors provide or propose specific tutors
+          to those seeking tutors. By considering security issues and using
+          technology, Caretutors try to match tutors with learners without
+          directly providing the tutoring service.
         </p>
       </div>
     </footer>

@@ -1,4 +1,5 @@
-import SignInProvider from "@/components/SigninProvider/SignInProvider";
+// import SignInProvider from "@/components/SigninProvider/SignInProvider";
+import GuardianLayout from "@/components/UI/GuardianLayout/GuardianLayout";
 import React from "react";
 
 const layout = ({
@@ -6,7 +7,7 @@ const layout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  return <SignInProvider>{children}</SignInProvider>;
+  return <GuardianLayout>{children}</GuardianLayout>;
 };
 
 export default layout;
